@@ -29,25 +29,9 @@ jobs:
       
       - name: Setup Pages
         uses: actions/configure-pages@v3
-        
-      - name: Checkout football-legend-hub repository
-        uses: actions/checkout@v3
-        with:
-          repository: vedant8211/football-legend-hub
-          path: football-legend-hub
-          fetch-depth: 1
-          submodules: false
-          
-      - name: Checkout my-indian-states repository
-        uses: actions/checkout@v3
-        with:
-          repository: vedant8211/my-indian-states
-          path: my-indian-states
-          fetch-depth: 1
-          submodules: false
       
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v2
         with:
           # Upload entire repository
           path: '.'
